@@ -29,7 +29,7 @@ RUN apk --update --no-cache add openssh \
 
 COPY files/standalone/* /opt/wildfly/standalone/configuration
 
-VOLUME ["/opt/wildfly/standalone/configuration", "/opt/wildfly/standalone/deployments", "/opt/wildfly/standalone/tmp", "/opt/wildfly/standalone/data", "/opt/wildfly/standalone/logs"]
+VOLUME ["/opt/wildfly/standalone/configuration", "/opt/wildfly/standalone/deployments", "/opt/wildfly/standalone/tmp", "/opt/wildfly/standalone/data", "/opt/wildfly/standalone/log"]
 
 EXPOSE 22/tcp 8080/tcp 8443/tcp 9990/tcp 9993/tcp
 
