@@ -23,7 +23,6 @@ RUN apk --update --no-cache add openssh \
   && chown wildfly:wildfly /opt/wildfly -R && mkdir -p /var/log/sshd/ /var/log/wildfly/ \
   && printf 'export JBOSS_HOME=/opt/wildfly\nexport PATH=$PATH:$JBOSS_HOME' > /etc/profile.d/jboss.sh \
   && /opt/wildfly/bin/add-user.sh admin admin --silent=true \
-  && chmod a+x /usr/local/bin/entrypoint.sh \
   && rm -rf /var/cache/apk/*
 
 COPY files/standalone/* /opt/wildfly/standalone/configuration
