@@ -7,7 +7,6 @@ ARG wildfly_url="http://download.jboss.org/wildfly/${wildfly_version}/wildfly-${
 
 WORKDIR /opt
 
-COPY files/entrypoint.sh /usr/local/bin/
 COPY files/supervisor/* /etc/supervisor.d/
 
 ## Configure SSH
