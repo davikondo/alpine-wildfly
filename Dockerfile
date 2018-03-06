@@ -2,7 +2,7 @@ FROM fabioluciano/alpine-base-java
 LABEL Maintainer="Fábio Luciano <fabioluciano@php.net>" \
   Description="Alpine Java Wildfly"
 
-ARG wildfly_version="9.0.2.Final"
+ARG wildfly_version="10.1.0.Final"
 ARG wildfly_url="http://download.jboss.org/wildfly/${wildfly_version}/wildfly-${wildfly_version}.tar.gz"
 
 WORKDIR /opt
